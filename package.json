@@ -4,23 +4,12 @@
   "private": true,
   "description": "The perfect starter kit for building beautiful websites with Next.js and Notion.",
   "author": {
-    "email": "2skydev@gmail.com",
-    "name": "2skydev",
-    "url": "https://github.com/2skydev"
+    "email": "noisonnoiton@gmail.com",
+    "name": "noisonnoiton",
+    "url": "https://github.com/noisonnoiton"
   },
-  "contributors": [
-    {
-      "email": "wmsttks@gmail.com",
-      "name": "yoonjihong",
-      "url": "https://github.com/yoonjihong"
-    },
-    {
-      "email": "webd200@gmail.com",
-      "name": "jong-hui",
-      "url": "https://github.com/jong-hui"
-    }
-  ],
-  "repository": "2skydev/blog",
+  "contributors": [],
+  "repository": "noisonnoiton/kloudbank-notion",
   "license": "MIT",
   "engines": {
     "node": ">=16"

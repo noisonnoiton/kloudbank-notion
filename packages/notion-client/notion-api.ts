@@ -581,6 +581,9 @@ export class NotionAPI {
         },
         json: body,
         headers,
+        https: {
+          rejectUnauthorized: false,
+        }
       })
       .json();
   }

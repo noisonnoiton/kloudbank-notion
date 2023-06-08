@@ -33,7 +33,7 @@ export interface SiteConfig {
   navigationStyle?: types.NavigationStyle;
   navigationLinks?: Array<NavigationLink>;
 
-  // custom configs (2skydev)
+  // custom configs 
   dateformat: string;
   hiddenPostProperties: string[];
   defaultTheme: 'light' | 'dark' | 'system';
