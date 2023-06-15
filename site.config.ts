@@ -54,7 +54,7 @@ export default siteConfig({
   navigationLinks: [
     {
       title: 'Category',
-      pageId: 'efd0d964f92946cebaa81162e127961d',
+      pageId: 'e5e412bd3e6a4d5597df95e7aaf1373c',
     },
   ],
 
@@ -64,7 +64,7 @@ export default siteConfig({
   dateformat: 'yyyy년 MM월 dd일',
 
   // post page - hidden properties
-  hiddenPostProperties: ['설명', '상태', '최하위 정렬'],
+  hiddenPostProperties: ['Status', '최하위 정렬'],
 
   // contentPosition (table of contents) text align
   contentPositionTextAlign: 'left',
