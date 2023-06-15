@@ -54,7 +54,7 @@ export default siteConfig({
   navigationLinks: [
     {
       title: 'Category',
-      pageId: '0f4d7ccccc6842c1b54d58009aa664e4',
+      pageId: 'efd0d964f92946cebaa81162e127961d',
     },
   ],
 
