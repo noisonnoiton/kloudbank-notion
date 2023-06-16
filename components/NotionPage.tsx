@@ -129,6 +129,14 @@ const propertyTextValue = ({ schema, pageHeader }, defaultFn: () => React.ReactN
   return defaultFn();
 };
 
+const propertyPersonValue = ({ data, schema, pageHeader }, defaultFn: () => React.ReactNode) => {
+  if (pageHeader && schema?.name?.toLowerCase() === 'author') {
+    return <b>{defaultFn()}</b>;
+  }
+
+  return defaultFn();
+};
+
 export const NotionPage: React.FC<types.PageProps> = ({
   site,
   recordMap,

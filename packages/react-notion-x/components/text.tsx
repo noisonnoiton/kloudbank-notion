@@ -79,11 +79,11 @@ export const Text: React.FC<{
 
                   return (
                     <div className="notion-user-container">
-                      <GracefulImage
+                      {/* <GracefulImage
                         className="notion-user"
                         src={mapImageUrl(user.profile_photo, block)}
                         alt={name}
-                      />
+                      /> */}
                       <span className="notion-user-name">{name}</span>
                     </div>
                   );
@@ -204,11 +204,11 @@ export const Text: React.FC<{
 
               return (
                 <div className="notion-user-container">
-                  <GracefulImage
+                  {/* <GracefulImage
                     className="notion-user"
                     src={mapImageUrl(user.profile_photo, block)}
                     alt={name}
-                  />
+                  /> */}
                   <span className="notion-user-name">{name}</span>
                 </div>
               );

@@ -27,7 +27,7 @@ export default siteConfig({
   // page-specific values will override these site-wide defaults
   defaultPageIcon:
     'https://kloudbank.github.io/avatar.png',
-  defaultPageCover: 'https://kloudbank.github.io/avatar.png',
+  defaultPageCover: null,
   defaultPageCoverPosition: 0.5,
 
   // whether or not to enable support for LQIP preview images (optional)

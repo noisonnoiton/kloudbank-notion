@@ -70,7 +70,7 @@ export class NotionAPI {
     // CUSTOM: 작성자 유저 정보 가져오도록 처리
     const pageBlockId = Object.keys(recordMap.block)[0];
     const pageBlock = recordMap.block[pageBlockId].value;
-    const authorId = pageBlock.created_by_id;
+    const authorId = pageBlock.created_by_id;;
     const users = await this.getUsers([authorId]);
     const author = users.results[0];
 
