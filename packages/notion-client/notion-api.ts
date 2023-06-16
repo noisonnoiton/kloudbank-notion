@@ -538,7 +538,7 @@ export class NotionAPI {
       },
     };
 
-    return this.fetch<notion.SearchResults>({
+    return this.fetch_api_v1<notion.SearchResults>({
       endpoint: 'search',
       body,
       gotOptions,
@@ -587,4 +587,51 @@ export class NotionAPI {
       })
       .json();
   }
+
+  public async fetch_api_v1<T>({
+    endpoint,
+    body,
+    gotOptions,
+    headers: clientHeaders,
+  }: {
+    endpoint: string;
+    body: object;
+    gotOptions?: OptionsOfJSONResponseBody;
+    headers?: any;
+  }): Promise<T> {
+    const headers: any = {
+      ...clientHeaders,
+      ...gotOptions?.headers,
+      'Content-Type': 'application/json',
+    };
+
+    if (this._authToken) {
+      headers.cookie = `token_v2=${this._authToken}`;
+    }
+
+    if (this._activeUser) {
+      headers['x-notion-active-user-header'] = this._activeUser;
+    }
+
+    // const url = `${this._apiBaseUrl}/${endpoint}`;
+    const url = `https://api.notion.com/v1/${endpoint}`;
+
+    return got
+      .post(url, {
+        ...gotOptions,
+        retry: {
+          limit: 2,
+          methods: ['POST'],
+        },
+        json: body,
+        headers,
+        https: {
+          rejectUnauthorized: false,
+        }
+      })
+      .json();
+  }
+
 }
+
+
