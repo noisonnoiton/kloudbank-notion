@@ -57,12 +57,16 @@ export default siteConfig({
       pageId: '645ff5130a724abc8afaecdc3c932250',
     },
     {
-      title: 'Public Cloud',
-      pageId: 'cd25ea2bc2cd4b47a08ff87d0646efe7',
+      title: 'Category',
+      pageId: 'e5e412bd3e6a4d5597df95e7aaf1373c',
     },
     {
-      title: 'MSA',
-      pageId: 'd3e09510e0f64c5f811ed4d5600d1152',
+      title: 'About',
+      pageId: '',
+    },
+    {
+      title: 'Contact',
+      pageId: '',
     },
   ],
 
