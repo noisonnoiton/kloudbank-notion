@@ -62,11 +62,11 @@ export default siteConfig({
     },
     {
       title: 'About',
-      pageId: '',
+      pageId: 'ef3ef9675fae4594865fce62abd69cf7',
     },
     {
       title: 'Contact',
-      pageId: '',
+      pageId: 'd8b7961eacf24b308869ff5645658394',
     },
   ],
 
