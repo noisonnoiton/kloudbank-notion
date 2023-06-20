@@ -27,7 +27,7 @@ export default async function handler(req: NextRequest) {
     const description = properties?.['설명']?.rich_text?.[0]?.plain_text || siteConfig.description;
     const tags = (properties?.['Tags']?.multi_select || []).map((tag: any) => tag.name);
     const author = siteConfig.author;
-    const authorImage = siteConfig.defaultPageIcon;
+    // const authorImage = siteConfig.defaultPageIcon;
     const publishedAt = properties?.['Created']?.created_time;
     const publishedAtString = publishedAt
       ? new Date(publishedAt).toLocaleDateString('ko-KR', {
@@ -80,7 +80,7 @@ export default async function handler(req: NextRequest) {
                 alignItems: 'center',
               }}
             >
-              <img
+              {/* <img
                 src={authorImage}
                 style={{
                   width: '100px',
@@ -90,7 +90,7 @@ export default async function handler(req: NextRequest) {
                   borderRadius: '50%',
                   marginRight: '16px',
                 }}
-              />
+              /> */}
 
               <div
                 style={{

@@ -26,8 +26,8 @@ export default siteConfig({
   // default notion icon and cover images for site-wide consistency (optional)
   // page-specific values will override these site-wide defaults
   defaultPageIcon:
-    'https://kloudbank.github.io/avatar.png',
-  defaultPageCover: null,
+    'https://kloudbank.github.io/favicon.ico',
+  defaultPageCover: 'https://kloudbank.github.io/bg.jpeg',
   defaultPageCoverPosition: 0.5,
 
   // whether or not to enable support for LQIP preview images (optional)
